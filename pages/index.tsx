@@ -1,33 +1,19 @@
 import { Box, Heading } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 
+import Section from '../components/Section'
+
 const Home: NextPage = () => {
     return (
         <>
-            <Heading as='h2' variant='page-title'>
-                <p>Here</p>
-            </Heading>
-            <Box
-                borderRadius='lg'
-                bg='aqua'
-                h='12'
-                display='flex'
-                alignItems='center'
-            >
-                <div>Hello to my homepage</div>
-            </Box>
-            <Box h='500px' id='aboutme'>
-                <p>About me</p>
-            </Box>
-            <Box h='500px' id='projects'>
-                <p>Projects</p>
-            </Box>
-            <Box h='500px' id='games'>
-                <p>Games</p>
-            </Box>
-            <Box h='500px' id='apis'>
-                <p>APIs</p>
-            </Box>
+            <Section delay={0.1}>
+                <Heading as='h2' variant='page-title'>
+                    <p>About me</p>
+                </Heading>
+                <Box h='100vh' id='aboutme' bg='red.100'>
+                    <p>About me</p>
+                </Box>
+            </Section>
         </>
     )
 }

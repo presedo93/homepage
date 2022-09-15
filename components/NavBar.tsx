@@ -1,4 +1,5 @@
 import React from 'react'
+import NextLink from 'next/link'
 import {
     Container,
     Flex,
@@ -19,23 +20,22 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import ToggleTheme from './ToggleTheme'
 
 interface TextProps {
-    text: string
-    href?: any
+    children: React.ReactNode
+    href: string
 }
 
-const TextLink: React.FC<TextProps> = (props: TextProps) => {
-    const scroll = () => {
-        document.getElementById(props.href)?.scrollIntoView({ behavior: 'smooth' })
-    }
+const TextLink: React.FC<TextProps> = ({ children, href }: TextProps) => {
     return (
-        <Link onClick={scroll}>
-            <Text
-                fontSize={{ base: '1.1rem', md: '1.5rem' }}
-                fontStyle={{ base: 'normal', md: 'italic' }}
-            >
-                {props.text}
-            </Text>
-        </Link>
+        <NextLink href={href} passHref scroll={false}>
+            <Link textUnderlineOffset={6}>
+                <Text
+                    fontSize={{ base: '1.1rem', md: '1.5rem' }}
+                    fontStyle={{ base: 'normal', md: 'italic' }}
+                >
+                    {children}
+                </Text>
+            </Link>
+        </NextLink>
     )
 }
 
@@ -55,7 +55,7 @@ const GitLink: React.FC = () => {
 const NavBar = () => {
     return (
         <Flex
-            bg={useColorModeValue('#D0D0D090', '#0B161D99')}
+            bg={useColorModeValue('#D0D0D0', '#0B161D')}
             w='100%'
             h='60px'
             position='fixed'
@@ -65,10 +65,10 @@ const NavBar = () => {
         >
             <Container maxW='container.md'>
                 <HStack display={{ base: 'none', md: 'flex' }} justify='space-between'>
-                    <TextLink text='About me' href='aboutme' />
-                    <TextLink text='Projects' href='projects' />
-                    <TextLink text='Games' href='games' />
-                    <TextLink text='APIs' href='apis' />
+                    <TextLink href='/'>About me</TextLink>
+                    <TextLink href='/projects'>Projects</TextLink>
+                    <TextLink href='/games'>Games</TextLink>
+                    <TextLink href='/apis'>APIs</TextLink>
                     <GitLink />
                 </HStack>
             </Container>
@@ -86,16 +86,16 @@ const NavBar = () => {
                         />
                         <MenuList>
                             <MenuItem>
-                                <TextLink text='About me' href='aboutme' />
+                                <TextLink href='/'>About me</TextLink>
                             </MenuItem>
                             <MenuItem>
-                                <TextLink text='Projects' href='projects' />
+                                <TextLink href='/projects'>Projects</TextLink>
                             </MenuItem>
                             <MenuItem>
-                                <TextLink text='Games' href='games' />
+                                <TextLink href='/games'>Games</TextLink>
                             </MenuItem>
                             <MenuItem>
-                                <TextLink text='APIs' href='apis' />
+                                <TextLink href='/apis'>APIs</TextLink>
                             </MenuItem>
                             <MenuItem>
                                 <Box mr={2}>Source</Box>
