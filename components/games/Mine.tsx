@@ -2,8 +2,12 @@ import { Box, Grid, useColorModeValue } from '@chakra-ui/react'
 import { useEffect, useState, MouseEvent } from 'react'
 import init, { getState, openField, toggleFlag } from 'minesweeper'
 
-const Mine = () => {
-    const bg = useColorModeValue('#D0D0D0', '#0B161D')
+interface MineProps {
+    reset: boolean
+}
+
+const Mine = ({ reset }: MineProps) => {
+    const bg = useColorModeValue('#EEEBEB', '#12232E')
     const [data, setData] = useState<string[][]>([])
     const [render, setRender] = useState<number>(0)
 
@@ -20,7 +24,7 @@ const Mine = () => {
         init().then(() => {
             fetchState()
         })
-    }, [])
+    }, [reset])
 
     // Update the board based on 'render' changes.
     useEffect(() => {
