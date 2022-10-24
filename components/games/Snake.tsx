@@ -1,18 +1,25 @@
-import { Box, useColorModeValue } from '@chakra-ui/react'
-import { useEffect } from 'react'
-import init from 'snake'
+import { Box, useColorModeValue } from '@chakra-ui/react';
+import { useEffect } from 'react';
+import init, { render } from 'snake';
 
 interface SnakeProps {
-    reset: boolean
+    reset: boolean;
 }
 
 const Snake = ({ reset }: SnakeProps) => {
-    const bg = useColorModeValue('#EEEBEB', '#12232E')
+    const bg = useColorModeValue('#EEEBEB', '#12232E');
 
     // Set the board for the 1st time
     useEffect(() => {
-        init().then(() => { })
-    }, [reset])
+        init().then(() => { });
+    }, [reset]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            render();
+        }, 200);
+        return () => clearInterval(interval);
+    });
 
     return (
         <>
@@ -27,7 +34,7 @@ const Snake = ({ reset }: SnakeProps) => {
                 h={250}
             />
         </>
-    )
-}
+    );
+};
 
-export default Snake
+export default Snake;

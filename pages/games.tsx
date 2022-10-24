@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
-import { Box } from '@chakra-ui/react'
+import type { NextPage } from 'next';
+import { Box } from '@chakra-ui/react';
 
-import Section from '../components/Section'
-import GameDesc from '../components/games/GameDesc'
-import MineBoard from '../components/games/MineBoard'
-import SnakeBoard from '../components/games/SnakeBoard'
+import Section from '../components/Section';
+import GameDesc from '../components/games/GameDesc';
+import MineBoard from '../components/games/MineBoard';
+import SnakeBoard from '../components/games/SnakeBoard';
 
 const Games: NextPage = () => {
     return (
@@ -22,7 +22,7 @@ const Games: NextPage = () => {
                 <SnakeBoard />
             </Section>
         </>
-    )
-}
+    );
+};
 
-export default Games
+export default Games;
