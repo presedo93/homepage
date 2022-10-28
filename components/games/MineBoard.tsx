@@ -1,21 +1,22 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import {
+    Box,
     Flex,
     Button,
     Heading,
     Text,
     useColorModeValue,
-} from '@chakra-ui/react'
-import Mine from './Mine'
+} from '@chakra-ui/react';
+import Mine from './Mine';
 
 const MineBoard = () => {
-    const [reset, setReset] = useState<boolean>(false)
-    const bgBox = useColorModeValue('#D0D0D0', '#0B161D')
-    const bgIn = useColorModeValue('#EEEBEB', '#12232E')
+    const [reset, setReset] = useState<boolean>(false);
+    const bgBox = useColorModeValue('#D0D0D0', '#0B161D');
+    const bgIn = useColorModeValue('#EEEBEB', '#12232E');
 
     return (
         <Flex
-            h={{ base: 900, md: '52vh' }}
+            h={{ base: 'fit-content', xl: '46vh' }}
             bg={bgBox}
             rounded={20}
             alignItems={{ base: 'center', md: 'center' }}
@@ -38,7 +39,7 @@ const MineBoard = () => {
                         size={'xs'}
                         w={'60%'}
                         onClick={() => {
-                            setReset(!reset)
+                            setReset(!reset);
                         }}
                     >
                         Reset game
@@ -77,9 +78,10 @@ const MineBoard = () => {
                     close to them) or right-click them to put a flag there. In case you
                     loose or want to start again the 'Reset game' button is your choice.
                 </Text>
+                <Box h={{ base: 6, xl: 0 }} />
             </Flex>
         </Flex>
-    )
-}
+    );
+};
 
-export default MineBoard
+export default MineBoard;

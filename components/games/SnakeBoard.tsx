@@ -1,21 +1,22 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import {
     Flex,
+    Box,
     Button,
     Heading,
     Text,
     useColorModeValue,
-} from '@chakra-ui/react'
-import Snake from './Snake'
+} from '@chakra-ui/react';
+import Snake from './Snake';
 
 const SnakeBoard = () => {
-    const [reset, setReset] = useState<boolean>(false)
-    const bgBox = useColorModeValue('#D0D0D0', '#0B161D')
-    const bgIn = useColorModeValue('#EEEBEB', '#12232E')
+    const [reset, setReset] = useState<boolean>(false);
+    const bgBox = useColorModeValue('#D0D0D0', '#0B161D');
+    const bgIn = useColorModeValue('#EEEBEB', '#12232E');
 
     return (
         <Flex
-            h={{ base: 900, md: '52vh' }}
+            h={{ base: 'fit-content', xl: '46vh' }}
             bg={bgBox}
             rounded={20}
             alignItems={{ base: 'center', md: 'center' }}
@@ -38,7 +39,7 @@ const SnakeBoard = () => {
                         size={'xs'}
                         w={'60%'}
                         onClick={() => {
-                            setReset(!reset)
+                            setReset(!reset);
                         }}
                     >
                         Reset game
@@ -60,26 +61,29 @@ const SnakeBoard = () => {
                     mr={8}
                     alignSelf={'end'}
                 >
-                    Minesweeper
+                    Snake
                 </Heading>
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
-                    Do you remember the coolest game in Windows 3.x? The legenday
-                    Minesweeper is here and it can be played directly in your browser!
+                    Good old times playing the Snake game in the Nokia 3310, isn't it?
+                    Let's relive them! There it is a WASM version ready to be played on
+                    your browser!
                 </Text>
 
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
-                    This version of the game is done using WebAssembly. The code was
-                    developed in Rust and integrated in this webpage so it can be played
-                    just by opening the page.
+                    To play the game, you need to use the <strong>ASWD</strong> keys to
+                    move the snake, it will start once you reload or enter the page, but
+                    there is a Reset button to start all over again and again and again...
                 </Text>
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
-                    Just left-click the boxes to discover its content (the number of mines
-                    close to them) or right-click them to put a flag there. In case you
-                    loose or want to start again the 'Reset game' button is your choice.
+                    Snake moves every 200ms and in this case 99% of the logic is directly
+                    done in the WASM code. Most of the HTML/JS is contructed using{' '}
+                    <code>web_sys</code>, so it means that CSS styles, child elements and
+                    even the Event handlers have been developed in a super cool way!
                 </Text>
             </Flex>
+            <Box h={{ base: 6, xl: 0 }} />
         </Flex>
-    )
-}
+    );
+};
 
-export default SnakeBoard
+export default SnakeBoard;
