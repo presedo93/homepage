@@ -19,7 +19,7 @@ const MineBoard = () => {
             h={{ base: 'fit-content', xl: '46vh' }}
             bg={bgBox}
             rounded={20}
-            alignItems={{ base: 'center', md: 'center' }}
+            alignItems={'center'}
             flexDirection={{ base: 'column', md: 'row' }}
         >
             <Flex
