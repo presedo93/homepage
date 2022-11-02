@@ -1,16 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { chakra, shouldForwardProp } from '@chakra-ui/react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { chakra, shouldForwardProp } from '@chakra-ui/react';
 
 const StyleDiv = chakra(motion.div, {
     shouldForwardProp: (prop) => {
-        return shouldForwardProp(prop) || prop === 'transition'
+        return shouldForwardProp(prop) || prop === 'transition';
     },
-})
+});
 
 interface SectionProps {
-    children: React.ReactNode
-    delay: number
+    children: React.ReactNode;
+    delay: number;
 }
 
 const Section = ({ children, delay = 0 }: SectionProps) => {
@@ -23,7 +23,7 @@ const Section = ({ children, delay = 0 }: SectionProps) => {
         >
             {children}
         </StyleDiv>
-    )
-}
+    );
+};
 
-export default Section
+export default Section;

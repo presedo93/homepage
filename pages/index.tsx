@@ -1,5 +1,6 @@
 import {
     Box,
+    Flex,
     Heading,
     VStack,
     Text,
@@ -23,24 +24,30 @@ const Home: NextPage = () => {
             <Box h={12} />
             <Section delay={0.1}>
                 <Box h={{ base: 'fit-content', xl: '90vh' }} bg={bg} rounded={20}>
-                    <VStack ml={8} mr={8}>
+                    <VStack ml={{ md: 8 }} mr={{ base: 0, md: 8 }}>
                         <Heading
                             textAlign={'left'}
                             fontWeight={'semibold'}
                             textDecoration={'underline'}
                             fontSize={42}
                             textDecorationColor={'yellow.300'}
-                            alignSelf={'end'}
-                            mr={8}
-                            mt={6}
-                            mb={4}
+                            alignSelf={{ base: 'start', md: 'end' }}
+                            mr={{ base: 0, md: 8 }}
+                            mt={{ base: 2, md: 6 }}
+                            ml={{ base: 6, md: 0 }}
+                            mb={{ md: 4 }}
                         >
-                            About me...
+                            About me
                         </Heading>
-                        <Box>
+                        <Flex
+                            alignItems={{ base: 'center', md: 'unset' }}
+                            display={{ base: 'flex', md: 'unset' }}
+                            direction={{ base: 'column' }}
+                        >
                             <Box
-                                float={'left'}
-                                mr={8}
+                                float={{ base: 'unset', md: 'left' }}
+                                mr={{ base: 0, md: 8 }}
+                                mb={8}
                                 borderRadius={'full'}
                                 borderStyle={'solid'}
                                 borderColor={'yellow.300'}
@@ -58,30 +65,67 @@ const Home: NextPage = () => {
                             </Box>
 
                             <Text>
-                                Maybe we can live without libraries, people like you and me.
-                                Maybe. Sure, we're too old to change the world, but what about
-                                that kid, sitting down, opening a book, right now, in a branch
-                                at the local library and finding drawings of pee-pees and
-                                wee-wees on the Cat in the Hat and the Five Chinese Brothers?
-                                Doesn't HE deserve better? Look. If you think this is about
-                                overdue fines and missing books, you'd better think again. This
-                                is about that kid's right to read a book without getting his
-                                mind warped! Or: maybe that turns you on, Seinfeld; maybe that's
-                                how y'get your kicks. You and your good-time buddies.
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                            <br />
+                            <Flex alignItems={'center'} direction={'column'}>
+                                <Box>
+                                    <Text>
+                                        {'~~>'} 🌱 I’m currently learning about software
+                                        architectures.
+                                    </Text>
+                                    <Text>
+                                        {'~~>'} 👯 I’m looking to collaborate on cool projects!
+                                        Lately, I've got some interest in financial ML ones.
+                                    </Text>
+                                    <Text>
+                                        {'~~>'} 🥅 2022 Goals: work on a reinforcement learning
+                                        project!
+                                    </Text>
+                                    <Text>
+                                        {'~~>'} ⚡ Fun fact: I do really love football ⚽ and Dark
+                                        Souls games.
+                                    </Text>
+                                </Box>
+                            </Flex>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
                             </Text>
                             <Text>
-                                Maybe we can live without libraries, people like you and me.
-                                Maybe. Sure, we're too old to change the world, but what about
-                                that kid, sitting down, opening a book, right now, in a branch
-                                at the local library and finding drawings of pee-pees and
-                                wee-wees on the Cat in the Hat and the Five Chinese Brothers?
-                                Doesn't HE deserve better? Look. If you think this is about
-                                overdue fines and missing books, you'd better think again. This
-                                is about that kid's right to read a book without getting his
-                                mind warped! Or: maybe that turns you on, Seinfeld; maybe that's
-                                how y'get your kicks. You and your good-time buddies.
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
                             </Text>
-                        </Box>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                            <Text>
+                                I'm a Sofware Developer in between of two worlds! I love to do
+                                Machine Learning but I also have a lot of fun doing Software
+                                Development 🙃. Here it is a little bit about me:
+                            </Text>
+                        </Flex>
                     </VStack>
                 </Box>
             </Section>
