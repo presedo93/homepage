@@ -16,7 +16,7 @@ const MineBoard = () => {
 
     return (
         <Flex
-            h={{ base: 'fit-content', xl: '46vh' }}
+            h={{ base: 'fit-content' }}
             bg={bgBox}
             rounded={20}
             alignItems={'center'}
@@ -78,7 +78,7 @@ const MineBoard = () => {
                     close to them) or right-click them to put a flag there. In case you
                     loose or want to start again the 'Reset game' button is your choice.
                 </Text>
-                <Box h={{ base: 6, xl: 0 }} />
+                <Box h={{ base: 8 }} />
             </Flex>
         </Flex>
     );

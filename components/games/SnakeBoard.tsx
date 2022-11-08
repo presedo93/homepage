@@ -16,7 +16,7 @@ const SnakeBoard = () => {
 
     return (
         <Flex
-            h={{ base: 'fit-content', xl: '46vh' }}
+            h={{ base: 'fit-content' }}
             bg={bgBox}
             rounded={20}
             alignItems={{ base: 'center', md: 'center' }}
@@ -80,8 +80,8 @@ const SnakeBoard = () => {
                     <code>web_sys</code>, so it means that CSS styles, child elements and
                     even the Event handlers have been developed in a super cool way!
                 </Text>
+                <Box h={{ base: 8 }} />
             </Flex>
-            <Box h={{ base: 6, xl: 0 }} />
         </Flex>
     );
 };
