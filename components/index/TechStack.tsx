@@ -2,17 +2,20 @@ import {
     Box,
     Flex,
     Grid,
-    GridItem,
     Heading,
-    Tag,
-    TagLabel,
-    Text,
     VStack,
     useColorModeValue,
 } from '@chakra-ui/react';
-import { DiMongodb } from 'react-icons/di';
+import {
+    SiTypescript,
+    SiCplusplus,
+    SiRubygems,
+    SiGoland,
+} from 'react-icons/si';
+import { DiMongodb, DiRust, DiPython } from 'react-icons/di';
 
 import TechItem from './TechItem';
+import TechTitle from './TechTitle';
 
 const TeachStack = () => {
     const bg = useColorModeValue('#D0D0D0', '#0B161D');
@@ -37,57 +40,90 @@ const TeachStack = () => {
                 <Flex
                     direction={{ base: 'row' }}
                     align={'start'}
-                    justify={'start'}
+                    justify={'center'}
                     w={'full'}
-                    gap={4}
+                    gap={12}
                 >
                     <Grid
                         templateRows='repeat(4, 1fr)'
                         templateColumns='repeat(3, 1fr)'
                         gap={4}
                     >
-                        <GridItem rowSpan={1} colSpan={4}>
-                            <Flex justify={'center'}>
-                                <Heading>Frameworks</Heading>
-                            </Flex>
-                        </GridItem>
-                        <GridItem rowSpan={1} colSpan={1}>
-                            <TechItem label='MongoDB'>
-                                <DiMongodb />
-                            </TechItem>
-                        </GridItem>
+                        <TechTitle title='Frameworks' />
+                        <TechItem rowStart={2} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={2} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={3} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={2} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={3} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={4} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
                     </Grid>
                     <Grid
                         templateRows='repeat(4, 1fr)'
                         templateColumns='repeat(3, 1fr)'
                         gap={4}
                     >
-                        <GridItem rowSpan={1} colSpan={4}>
-                            <Flex justify={'center'}>
-                                <Heading>Languages</Heading>
-                            </Flex>
-                        </GridItem>
-                        <GridItem rowSpan={1} colSpan={1}>
-                            <TechItem label='MongoDB'>
-                                <DiMongodb />
-                            </TechItem>
-                        </GridItem>
+                        <TechTitle title='Languages' />
+                        <TechItem rowStart={2} colStart={1} label='Rust'>
+                            <DiRust />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={2} label='TS/JS'>
+                            <SiTypescript />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={3} label='Python'>
+                            <DiPython />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={1} label='C++'>
+                            <SiCplusplus />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={2} label='Ruby'>
+                            <SiRubygems />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={3} label='Go'>
+                            <SiGoland />
+                        </TechItem>
                     </Grid>
                     <Grid
                         templateRows='repeat(4, 1fr)'
                         templateColumns='repeat(3, 1fr)'
                         gap={4}
                     >
-                        <GridItem rowSpan={1} colSpan={4}>
-                            <Flex justify={'center'}>
-                                <Heading>Others</Heading>
-                            </Flex>
-                        </GridItem>
-                        <GridItem rowSpan={1} colSpan={1}>
-                            <TechItem label='MongoDB'>
-                                <DiMongodb />
-                            </TechItem>
-                        </GridItem>
+                        <TechTitle title='Others' />
+                        <TechItem rowStart={2} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={2} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={2} colStart={3} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={2} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={3} colStart={3} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
+                        <TechItem rowStart={4} colStart={1} label='MongoDB'>
+                            <DiMongodb />
+                        </TechItem>
                     </Grid>
                 </Flex>
                 <Box h={8} />

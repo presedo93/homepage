@@ -1,18 +1,22 @@
-import { Box, Tag, TagLabel } from '@chakra-ui/react';
+import { Box, GridItem, Tag, TagLabel } from '@chakra-ui/react';
 
 interface TechItemProps {
     children: React.ReactNode;
     label: string;
+    rowStart: number;
+    colStart: number;
 }
 
-const TechItem = ({ children, label }: TechItemProps) => {
+const TechItem = ({ children, label, ...chakraProps }: TechItemProps) => {
     return (
-        <Tag size={'lg'} borderRadius={'full'}>
-            <Box ml={-1} mr={1}>
-                {children}
-            </Box>
-            <TagLabel>{label}</TagLabel>
-        </Tag>
+        <GridItem {...chakraProps}>
+            <Tag size={'lg'} borderRadius={'full'}>
+                <Box ml={-1} mr={1}>
+                    {children}
+                </Box>
+                <TagLabel>{label}</TagLabel>
+            </Tag>
+        </GridItem>
     );
 };
 
