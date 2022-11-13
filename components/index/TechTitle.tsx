@@ -6,7 +6,7 @@ interface TechTitleProps {
 
 const TechTitle = ({ title }: TechTitleProps) => {
     return (
-        <GridItem rowStart={0} colSpan={4}>
+        <GridItem rowStart={1} colSpan={{ base: 2, md: 3 }}>
             <Flex justify={'center'}>
                 <Heading as='h6' size={'md'}>
                     {title}

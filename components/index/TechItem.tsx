@@ -3,8 +3,6 @@ import { Box, GridItem, Tag, TagLabel } from '@chakra-ui/react';
 interface TechItemProps {
     children: React.ReactNode;
     label: string;
-    rowStart: number;
-    colStart: number;
 }
 
 const TechItem = ({ children, label, ...chakraProps }: TechItemProps) => {

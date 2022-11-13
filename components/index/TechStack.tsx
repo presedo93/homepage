@@ -63,82 +63,83 @@ const TeachStack = () => {
                 >
                     <Grid
                         templateRows='repeat(4, 1fr)'
-                        templateColumns='repeat(3, 1fr)'
+                        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
+                        mt={{ base: 8, md: 0 }}
                         gap={4}
                     >
                         <TechTitle title='Web frameworks' />
-                        <TechItem rowStart={2} colStart={1} label='React'>
+                        <TechItem label='React'>
                             <DiReact />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={2} label='NextJS'>
+                        <TechItem label='NextJS'>
                             <TbBrandNextjs />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={3} label='Vue'>
+                        <TechItem label='Vue'>
                             <FaVuejs />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={1} label='fastAPI'>
+                        <TechItem label='fastAPI'>
                             <SiFastapi />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={2} label='MongoDB'>
+                        <TechItem label='MongoDB'>
                             <DiMongodb />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={3} label='PostgreSQL'>
+                        <TechItem label='PostgreSQL'>
                             <DiPostgresql />
                         </TechItem>
-                        <TechItem rowStart={4} colStart={1} label='Sinatra'>
+                        <TechItem label='Sinatra'>
                             <BsGem />
                         </TechItem>
-                        <TechItem rowStart={4} colStart={2} label='Actix'>
+                        <TechItem label='Actix'>
                             <TbSteeringWheel />
                         </TechItem>
                     </Grid>
                     <Grid
-                        templateRows='repeat(4, 1fr)'
-                        templateColumns='repeat(3, 1fr)'
+                        templateRows='repeat(3, 1fr)'
+                        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
                         gap={4}
                     >
                         <TechTitle title='Languages' />
-                        <TechItem rowStart={2} colStart={1} label='Rust'>
+                        <TechItem label='Rust'>
                             <DiRust />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={2} label='TS/JS'>
+                        <TechItem label='TS/JS'>
                             <SiTypescript />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={3} label='Python'>
+                        <TechItem label='Python'>
                             <DiPython />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={1} label='C++'>
+                        <TechItem label='C++'>
                             <SiCplusplus />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={2} label='Ruby'>
+                        <TechItem label='Ruby'>
                             <SiRubygems />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={3} label='Go'>
+                        <TechItem label='Go'>
                             <SiGoland />
                         </TechItem>
                     </Grid>
                     <Grid
-                        templateRows='repeat(4, 1fr)'
-                        templateColumns='repeat(3, 1fr)'
+                        templateRows='repeat(3, 1fr)'
+                        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
                         gap={4}
                     >
                         <TechTitle title='ML & others' />
-                        <TechItem rowStart={2} colStart={1} label='Tensorflow'>
+                        <TechItem label='Tensorflow'>
                             <SiTensorflow />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={2} label='Pytorch'>
+                        <TechItem label='Pytorch'>
                             <SiPytorch />
                         </TechItem>
-                        <TechItem rowStart={2} colStart={3} label='MongoDB'>
+                        <TechItem label='MongoDB'>
                             <DiMongodb />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={1} label='Lightning'>
+                        <TechItem label='Lightning'>
                             <SiPytorchlightning />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={2} label='Docker'>
+                        <TechItem label='Docker'>
                             <FaDocker />
                         </TechItem>
-                        <TechItem rowStart={3} colStart={3} label='NeoVim'>
+                        <TechItem label='NeoVim'>
                             <SiVim />
                         </TechItem>
                     </Grid>
