@@ -71,8 +71,9 @@ const SnakeBoard = () => {
 
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
                     To play the game, you need to use the <strong>ASWD</strong> keys to
-                    move the snake, it will start once you reload or enter the page, but
-                    there is a Reset button to start all over again and again and again...
+                    move the snake (or the keys present in the mobile version), it will
+                    start once you reload or enter the page, but there is a Reset button
+                    to start all over again and again and again...
                 </Text>
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
                     Snake moves every 200ms and in this case 99% of the logic is directly
