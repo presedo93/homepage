@@ -1,5 +1,5 @@
-import React from 'react'
-import NextLink from 'next/link'
+import React from 'react';
+import NextLink from 'next/link';
 import {
     Container,
     Flex,
@@ -13,15 +13,15 @@ import {
     MenuButton,
     IconButton,
     useColorModeValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-import { AiFillGithub } from 'react-icons/ai'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import ToggleTheme from './ToggleTheme'
+import { AiFillGithub } from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import ToggleTheme from './ToggleTheme';
 
 interface TextProps {
-    children: React.ReactNode
-    href: string
+    children: React.ReactNode;
+    href: string;
 }
 
 const TextLink: React.FC<TextProps> = ({ children, href }: TextProps) => {
@@ -36,21 +36,25 @@ const TextLink: React.FC<TextProps> = ({ children, href }: TextProps) => {
                 </Text>
             </Link>
         </NextLink>
-    )
-}
+    );
+};
 
 const GitLink: React.FC = () => {
     return (
-        <Link target='_blank' href='https://github.com/presedo93'>
+        <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/presedo93'
+        >
             <AiFillGithub
                 style={{
                     color: useColorModeValue('black', 'white'),
                     fontSize: '1.5rem',
                 }}
             />
-        </Link>
-    )
-}
+        </a>
+    );
+};
 
 const NavBar = () => {
     return (
@@ -106,7 +110,7 @@ const NavBar = () => {
                 </Box>
             </Flex>
         </Flex>
-    )
-}
+    );
+};
 
-export default NavBar
+export default NavBar;

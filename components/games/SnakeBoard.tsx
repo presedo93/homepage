@@ -64,9 +64,9 @@ const SnakeBoard = () => {
                     Snake
                 </Heading>
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
-                    Good old times playing the Snake game in the Nokia 3310, isn't it?
-                    Let's relive them! There it is a WASM version ready to be played on
-                    your browser!
+                    Good old times playing the Snake game in the Nokia 3310, isn&apos;t
+                    it? Let$apos; relive them! There it is a WASM version ready to be
+                    played on your browser!
                 </Text>
 
                 <Text mt={8} ml={{ base: 3, md: 12 }}>

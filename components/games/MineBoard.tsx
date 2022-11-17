@@ -76,7 +76,8 @@ const MineBoard = () => {
                 <Text mt={8} ml={{ base: 3, md: 12 }}>
                     Just left-click the boxes to discover its content (the number of mines
                     close to them) or right-click them to put a flag there. In case you
-                    loose or want to start again the 'Reset game' button is your choice.
+                    loose or want to start again the &apos;Reset game&apos; button is your
+                    choice.
                 </Text>
                 <Box h={{ base: 8 }} />
             </Flex>

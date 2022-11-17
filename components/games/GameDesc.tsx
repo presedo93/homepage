@@ -22,8 +22,8 @@ const GameDesc = () => {
             <Text textAlign={'center'} mt={4}>
                 Web Assembly is getting more and more trending and having the
                 opportunity of working with it with the most loved programming language
-                for several years in Stack Overflow's surveys was a great chance not
-                only to get more confident on using <code>Rust</code> but also on
+                for several years in Stack Overflow&apos;s surveys was a great chance
+                not only to get more confident on using <code>Rust</code> but also on
                 learning such cool tools!
             </Text>
             <Text
@@ -34,9 +34,13 @@ const GameDesc = () => {
                 mt={2}
             >
                 Most of the merits (99% to be honest) of developing the games are for{' '}
-                yishn, he has several awesome rust projects in his youtube's channel
-                (link{' '}
-                <a target='_blank' href='https://www.youtube.com/c/yishn'>
+                yishn, he has several awesome rust projects in his youtube&apos;s
+                channel (link{' '}
+                <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href='https://www.youtube.com/c/yishn'
+                >
                     <u>here</u>
                 </a>
                 )
