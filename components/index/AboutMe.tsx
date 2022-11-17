@@ -18,32 +18,32 @@ const AboutMe = () => {
     const bg = useColorModeValue('#D0D0D0', '#0B161D');
 
     return (
-        <Box h={{ base: 'fit-content' }} bg={bg} rounded={20}>
-            <VStack ml={{ base: 4, md: 8 }} mr={{ base: 4, md: 8 }}>
+        <Box h={{base: 'fit-content'}} bg={bg} rounded={20}>
+            <VStack ml={{base: 4, md: 8}} mr={{base: 4, md: 8}}>
                 <Heading
                     textAlign={'left'}
                     fontWeight={'semibold'}
                     textDecoration={'underline'}
                     fontSize={42}
                     textDecorationColor={'yellow.300'}
-                    alignSelf={{ base: 'start', md: 'end' }}
-                    mr={{ base: 0, md: 8 }}
-                    mt={{ base: 2, md: 6 }}
-                    ml={{ base: 6, md: 0 }}
-                    mb={{ md: 4 }}
+                    alignSelf={{base: 'start', md: 'end'}}
+                    mr={{base: 0, md: 8}}
+                    mt={{base: 2, md: 6}}
+                    ml={{base: 6, md: 0}}
+                    mb={{md: 4}}
                 >
                     About me
                 </Heading>
                 <Flex
-                    alignItems={{ base: 'center', md: 'unset' }}
-                    display={{ base: 'flex', md: 'unset' }}
-                    direction={{ base: 'column' }}
+                    alignItems={{base: 'center', md: 'unset'}}
+                    display={{base: 'flex', md: 'unset'}}
+                    direction={{base: 'column'}}
                 >
                     <Box
-                        float={{ base: 'unset', md: 'left' }}
-                        mt={{ base: 4, md: 0 }}
-                        mr={{ base: 0, md: 8 }}
-                        mb={{ base: 4, md: 8 }}
+                        float={{base: 'unset', md: 'left'}}
+                        mt={{base: 4, md: 0}}
+                        mr={{base: 0, md: 8}}
+                        mb={{base: 4, md: 8}}
                         borderRadius={'full'}
                         borderStyle={'solid'}
                         borderColor={'yellow.300'}
@@ -66,23 +66,23 @@ const AboutMe = () => {
                         it is a little bit about me:
                     </Text>
                     <br />
-                    <Text mb={{ base: 4 }} ml={{ base: 8 }}>
+                    <Text mb={{base: 4}} ml={{base: 8}}>
                         {'~~>'} 🌱 I really love to learn about new topics and new
                         technologies. I'm not afraid of dealing with new challenges.
                     </Text>
-                    <Text mb={{ base: 4 }} ml={{ base: 8 }}>
+                    <Text mb={{base: 4}} ml={{base: 8}}>
                         {'~~>'} 👯 Along my carrer, I've worked as an embedded developer,
                         also as a machine learning engineer, I've been involved in devops
                         projects and lately I have started to focus in full stack
                         development!
                     </Text>
-                    <Text mb={{ base: 4 }} ml={{ base: 8 }}>
+                    <Text mb={{base: 4}} ml={{base: 8}}>
                         {'~~>'} 🥅 Some goals: I would love to work in a lot of different
                         projects but time is limited... lately I've been thinking on the
                         idea of working on a reinforcement learning project with some focus
                         on financial markets and create some mobile app to use it.
                     </Text>
-                    <Text mb={{ base: 4 }} ml={{ base: 8 }}>
+                    <Text mb={{base: 4}} ml={{base: 8}}>
                         {'~~>'} ⚡ As fun facts, I do really love football ⚽ and Dark Souls
                         games. Well, I have to be honest, I love nearly all kind of video
                         games hehe. But on my college years, Dark Souls saga was the main
@@ -92,7 +92,7 @@ const AboutMe = () => {
                         </b>
                     </Text>
                     <br />
-                    <Text mb={{ base: 4 }}>
+                    <Text mb={{base: 4}}>
                         Well... to be honest, most of my relevant info is the lines above
                         but we can make use of this section to talk a little bit deeper :).
                         I studied <b>Telecom engineer</b> but while I was doing the degree I
