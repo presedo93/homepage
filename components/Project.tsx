@@ -2,6 +2,9 @@ import {
     Box,
     Flex,
     Heading,
+    HStack,
+    Tag,
+    Text,
     chakra,
     useColorModeValue,
 } from '@chakra-ui/react';
@@ -12,13 +15,14 @@ interface ProjectProps {
     title: string;
     image?: any;
     reverse?: boolean;
+    tags?: string[];
 }
 
 const ProjectImage = chakra(Image, {
     shouldForwardProp: (prop) => ['src', 'alt', 'width', 'height'].includes(prop),
 });
 
-const Project = ({ children, title, image, reverse }: ProjectProps) => {
+const Project = ({ children, title, image, reverse, tags }: ProjectProps) => {
     const bg = useColorModeValue('#D0D0D0', '#0B161D');
     const rows = reverse ? 'row-reverse' : 'row';
     const heads = reverse ? 'start' : 'end';
@@ -26,7 +30,13 @@ const Project = ({ children, title, image, reverse }: ProjectProps) => {
     return (
         <Flex h={{ base: 'fit-content' }} bg={bg} rounded={20}>
             <Flex direction={{ base: 'column', md: rows }} m={8} align={'center'}>
-                <ProjectImage src={image} alt='MissingNo.' width={360} height={240} />
+                <ProjectImage
+                    src={image}
+                    alt='MissingNo.'
+                    width={360}
+                    height={240}
+                    rounded={5}
+                />
                 <Flex
                     h={'full'}
                     w={'full'}
@@ -47,7 +57,11 @@ const Project = ({ children, title, image, reverse }: ProjectProps) => {
                         {title}
                     </Heading>
                     {children}
-                    <Box h={{ base: 8 }} />
+                    <HStack mt={4} ml={{ base: 3, md: 12 }}>
+                        <Text>Tags: </Text>
+                        {tags != undefined && tags.map((tag) => <Tag>{tag}</Tag>)}
+                    </HStack>
+                    <Box h={{ base: 0, md: 8 }} />
                 </Flex>
             </Flex>
         </Flex>

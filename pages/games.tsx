@@ -10,15 +10,15 @@ const Games: NextPage = () => {
     return (
         <>
             <Box h={12} />
-            <Section delay={0.1}>
+            <Section delay={'0.1'}>
                 <GameDesc />
             </Section>
             <Box h={12} />
-            <Section delay={0.3}>
+            <Section delay={'0.3'}>
                 <MineBoard />
             </Section>
             <Box h={12} />
-            <Section delay={0.5}>
+            <Section delay={'0.5'}>
                 <SnakeBoard />
             </Section>
         </>

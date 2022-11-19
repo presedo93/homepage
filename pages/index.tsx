@@ -9,11 +9,11 @@ const Home: NextPage = () => {
     return (
         <>
             <Box h={12} />
-            <Section delay={0.1}>
+            <Section delay={'0.1'}>
                 <AboutMe />
             </Section>
             <Box h={12} />
-            <Section delay={0.3}>
+            <Section delay={'0.3'}>
                 <TechStack />
             </Section>
         </>

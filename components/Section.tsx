@@ -10,15 +10,15 @@ const StyleDiv = chakra(motion.div, {
 
 interface SectionProps {
     children: React.ReactNode;
-    delay: number;
+    delay: string;
 }
 
-const Section = ({ children, delay = 0 }: SectionProps) => {
+const Section = ({ children, delay = '0' }: SectionProps) => {
     return (
         <StyleDiv
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: delay }}
+            transition={{ duration: '0.8', delay: delay }}
             mb={6}
         >
             {children}

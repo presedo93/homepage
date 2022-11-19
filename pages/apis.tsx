@@ -7,7 +7,7 @@ const APIs = () => {
                 <VStack>
                     <Flex mb={{ base: 12 }} direction={'column'}>
                         <Heading fontWeight={'bold'} fontStyle={'italic'}>
-                            To be developed.
+                            To be developed...
                         </Heading>
                     </Flex>
                 </VStack>

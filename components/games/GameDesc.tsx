@@ -15,16 +15,16 @@ const GameDesc = () => {
                 GAMES
             </Heading>
             <Text textAlign={'center'} mt={8}>
-                This section shows some games done using Web Assembly. They have been
-                developed in <code>Rust</code> and compiled using the{' '}
+                This section shows some games done using <b>Web Assembly</b>. They have
+                been developed in <code>Rust</code> and compiled using the{' '}
                 <code>wasm-bidgen</code>!
             </Text>
             <Text textAlign={'center'} mt={4}>
-                Web Assembly is getting more and more trending and having the
-                opportunity of working with it with the most loved programming language
-                for several years in Stack Overflow&apos;s surveys was a great chance
-                not only to get more confident on using <code>Rust</code> but also on
-                learning such cool tools!
+                Web Assembly is getting more and more trending. Having the opportunity
+                to work with it with the most loved programming language for several
+                years in Stack Overflow&apos;s surveys was a great chance not only to
+                get more confident on using <code>Rust</code> but also on learning such
+                cool tools!
             </Text>
             <Text
                 textAlign={'center'}
@@ -34,7 +34,7 @@ const GameDesc = () => {
                 mt={2}
             >
                 Most of the merits (99% to be honest) of developing the games are for{' '}
-                yishn, he has several awesome rust projects in his youtube&apos;s
+                @yishn, he has several awesome rust projects in his youtube&apos;s
                 channel (link{' '}
                 <a
                     target='_blank'
