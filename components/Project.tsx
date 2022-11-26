@@ -59,7 +59,8 @@ const Project = ({ children, title, image, reverse, tags }: ProjectProps) => {
                     {children}
                     <HStack mt={4} ml={{ base: 3, md: 12 }}>
                         <Text>Tags: </Text>
-                        {tags != undefined && tags.map((tag) => <Tag>{tag}</Tag>)}
+                        {tags != undefined &&
+                            tags.map((tag, idx) => <Tag key={idx}>{tag}</Tag>)}
                     </HStack>
                     <Box h={{ base: 0, md: 8 }} />
                 </Flex>
