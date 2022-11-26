@@ -96,9 +96,9 @@ const AboutMe = () => {
                         Well... to be honest, most of my relevant info is in the lines above
                         but we can make use of this section to talk a little bit deeper :).
                         I studied <b>Telecom engineer</b> but while I was doing the degree,
-                        I realized that what I was addicted to was to coding. As in the
-                        degree all the coding subjects we had were involved with
-                        electronics, I decided to study a master related to that.
+                        I realized that what I was keen to was to coding. As in the degree
+                        all the coding subjects we had were involved with electronics, I
+                        decided to study a master related to that.
                     </Text>
                     <Text>
                         Once I finished my master&apos;s thesis, I felt that I needed some
